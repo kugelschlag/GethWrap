@@ -1,0 +1,9 @@
+.gradle
+.idea
+*.class
+*.war
+*.jar
+out/
+bin/
+target/
+docs/
