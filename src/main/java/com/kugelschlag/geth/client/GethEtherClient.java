@@ -122,7 +122,13 @@ public class GethEtherClient {
 
         try {
             String json = gson.toJson(request.getMap());
+//            System.out.println("*****" + json);
+
+
+
             String body = httpPost.post(json);
+//            System.out.println("***** body" + body);
+
             T t = gson.fromJson(body, classType);
 
             t.setJsonBody(body);

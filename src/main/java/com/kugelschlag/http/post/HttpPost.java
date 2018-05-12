@@ -9,13 +9,15 @@ import java.io.IOException;
 
 public class HttpPost {
 
-    public static String JSON_CONTENT_TYPE = "application/json";
-    public static String AUTHORIZATION = "Authorization";
+    public static final String JSON_CONTENT_TYPE = "application/json";
+    public static final String AUTHORIZATION = "Authorization";
 
     private final OkHttpClient client = new OkHttpClient();
     private final String host;
     private String token;
 
+
+    //For mock testing
     public HttpPost(String host, String token) {
         this.host = host;
         this.token = token;

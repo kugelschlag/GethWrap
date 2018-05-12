@@ -49,7 +49,7 @@ public class Deserializer {
                     }
 
                     //ethereum node server *is* synching and results is an object
-                } else if (resultElem.isJsonObject()){
+                } else if (resultElem != null) {
 
                     JsonObject jsonObj = resultElem.getAsJsonObject();
 

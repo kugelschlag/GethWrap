@@ -9,7 +9,7 @@ public class HttpGet {
 
 //    public static String JSON_CONTENT_TYPE = "application/json";
 
-    public static String AUTHORIZATION = "Authorization";
+    public static final String AUTHORIZATION = "Authorization";
 
     private final OkHttpClient client = new OkHttpClient();
     private final String host;
